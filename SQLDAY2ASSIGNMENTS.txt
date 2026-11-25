@@ -1,0 +1,11 @@
+create table Food (
+    FoodItemId INT PRIMARY KEY,
+    FoodName VARCHAR(50) NOT NULL,
+    Price DECIMAL(10,2) DEFAULT 5,
+    QtyAvailable DECIMAL(10,2) NOT NULL
+);
+
+insert into Food (FoodItemId, FoodName, Price, QtyAvailable) VALUES(1, 'Pizza', 150, 10.50),(2, 'Burger', 80, 15.75),(3, 'Sandwich', DEFAULT, 20.50),(4, 'Pasta', 120, 8.25),(5, 'Noodles', 90, 12.50);
+
+SELECT * FROM Food;
+
